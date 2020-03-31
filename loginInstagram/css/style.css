@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: #fafafa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Classe auxiliar*/
+.container{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+/*Classes do site*/
+
+/*Section principal*/
+.box{
+    text-align: center;
+    padding: 40px 0 30px 0;
+}
+
+.box .celular{
+    padding: 15px 0;
+    display: inline-block;
+    width: 380px;
+}
+
+.login-right{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.box .celular img{
+    width: 100%;
+}
+
+.box .login{
+    vertical-align: top;
+    display: inline-block;
+    border: 1px solid gray;
+    background-color: #fff;
+    
+    width: 350px;
+    border-radius: 5px; 
+}
+
+.box .login h2{
+    padding: 30px;
+    font-size: 40px;
+}
+
+.login .login-form{
+    padding: 5px 35px;
+}
+
+.box .login input{
+    margin: 5px 0;
+    padding: 2px;
+    width: 100%;
+    height: 40px;
+}
+
+.box .login-form [type=submit]{
+    border: 0;
+    background-color: rgba(0,149,246,1);
+    color: #fff;
+    margin: 10px 0;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.line-ou{
+    padding: 5px 35px;
+}
+
+.text-line{
+    background-color: grey;
+    height: 2px;
+    display: inline-block;
+    width: 118.5px;
+    opacity: 0.2;
+    margin: 5px 0;
+}
+
+.line-ou span{
+    display: inline-block;
+    padding: 0px 10px;
+    color: grey;
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.facebook{
+    display: block;
+    color: #385185;
+    margin: 30px 0;
+}
+
+.esqueceu{
+    margin-bottom: 20px;
+    display: block;
+    color: #00376b;
+}
+
+/*Caixa "não tem conta"*/
+
+.conta{
+    width: 350px;
+    background: #fff;
+    padding: 25px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-weight: lighter;
+}
+
+.conta a{
+    color: #0095f6;
+}
+
+.login-right .store img{
+    width: 150px;
+    margin: 20px 0;
+}
+
+/*Footer*/
+
+footer{
+    padding: 75px 50px 50px 85px;
+}
+
+div.rodape{
+    text-align: left;
+}
+
+div.rodape a{
+    padding: 0 5px;
+    font-size: 12px;
+    color: #00376b;
+}
+div.rodape p{
+    margin: 10px;
+    font-size: 14px;
+    color: dimgrey;
+}
+
+
+@media screen and (max-width: 820px){
+    .box .celular{
+        display: none;
+    }
+    
+    .login-right{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 380px){
+    
+    .login-right .login{
+        width: 250px;
+    }
+    
+    .text-line{
+        width: 68.5px;
+    }
+    
+    .box .login input{
+        height: 50px;
+    }
+    .box .login-form [type=submit]{
+        height: 50px;   
+    }
+    
+    .conta{
+        width: 250px;
+        padding: 15px;
+        margin: 20px 50px;
+    }
+    
+    footer{
+        padding: 40px;
+    }
+    
+    div.rodape a{
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .login-right .store img{
+        text-align: center;
+        display: inline-block;
+        width: 150px;
+        margin: 20px 50px;
+    }
+}
+    
+}
