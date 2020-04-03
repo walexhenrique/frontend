@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Classes auxiliares*/
+
+.container{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+.left{
+    float: left;
+}
+
+.w50{
+    width: 50%;
+}
+
+.center{
+    text-align: center;
+}
+
+/*Classes do site*/
+
+header{
+    background-color: rgb(86,43,0);
+}
+
+div.logo{
+    padding: 25px 0;
+}
+
+div.logo h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #f2dfd3;
+}
+
+div.logo a{
+    display: inline-block;
+    text-decoration: none;
+    background: none;
+    color: orange;
+    border-radius: 5px;
+    padding: 10px 100px;
+    border: 1px solid orange;
+}
+
+div.logo a:hover{
+    background-color: orange;
+    color: #fff;
+    transition: .5s;
+}
+
+/*Section principal*/
+
+section{
+    padding: 20px 0px;
+}
+
+section.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conectado{
+    padding: 0 10px;
+}
+
+.conectado h3{
+    text-align: center;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.conectado img{
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
+.cadastro h2{
+    font-size: 32px;    
+}
+
+.cadastro{
+    padding: 0 10px;
+    text-align: center;
+    
+}
+
+.cadastro input{
+    display: inline-block;
+    width: 50%;
+    height: 40px;
+    margin: 20px 0;
+    padding-left: 15px;
+    border: 0;
+    border: 2px solid #f1f1f1;
+    border-radius: 5px;
+}
+
+.cadastro input[type=submit]{
+    border: 1px solid orange;
+    background: none;
+    color: orange;
+    cursor: pointer;
+}
+
+.cadastro input[type=submit]:hover{
+    background-color: orange;
+    color: #fff;
+    transition: .3s;
+}
+
+/*responsivo*/
+
+@media screen and (max-width: 868px){
+    .w50{
+        width: 100%;
+    }
+    .conectado{
+        display: none;
+    }
+    .cadastro input{
+        width: 80%;
+        height: 50px;
+    }
+}
