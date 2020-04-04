@@ -1,0 +1,84 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    background-color: black;
+}
+
+/*Container*/
+.box{
+    background-color: #fff;
+    position: absolute;
+    font-family: Helvetica, Arial, sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    opacity: 0.95;
+    border-radius: 10px;
+    
+    text-align: center;
+    
+    height: 100%;
+    width: 100%;
+    max-height: 400px;
+    max-width: 300px;
+}
+
+
+/*Titulo*/
+.titulo{
+    margin: 20px;
+}
+
+/*Formulário*/
+.forms{
+    font-size: 20px;
+    padding: 20px;
+}
+.forms input{
+    width: 250px;
+    height: 30px;
+    margin-top: 2px;
+}
+
+/*Cadastrar*/
+.cadastre-se{
+    margin-top: 15px;
+    
+}
+
+.cadastre-se a{
+    text-decoration: none;
+    color: #f95738;
+}
+
+/*Botão login*/
+
+.botao a{
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #209cee;
+    color: #fff;
+}
+
+@media screen and (max-width: 325px){
+    .box{
+        max-width: 220px;
+    }
+    
+    .forms input{
+        width: 170px;
+    }
+    
+    .cadastre-se{
+        font-size: 12px;
+    }
+}
