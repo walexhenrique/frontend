@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    background-color: #f95738;
+}
+
+/*Classes Auxiliares*/
+
+.container{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+.w25{
+    float: left;
+    width: 25%;
+}
+
+.w50{
+    float: left;
+    width: 50%;
+}
+
+/*Classes do site*/
+
+/*header*/
+
+header{
+    background-color: #fff;
+}
+
+.logo{
+    float: left;
+    width: 30px;
+    margin: 10px 10px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.menu-desktop{
+    position: relative;
+    top: 16px;
+}
+
+.menu-desktop ul li{
+    padding: 0 10px;
+    list-style: none;
+    display: inline-block;
+}
+
+i{
+    padding: 0 5px;
+}
+
+.menu-desktop ul{
+    float: left;  
+}
+
+.menu-desktop ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-desktop ul li a:hover{
+    color: deepskyblue;
+}
+
+.menu-desktop-sair{
+    margin: -6px;
+    float: right;
+}
+
+.menu-desktop-sair input{
+    border: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.menu-desktop-sair input:hover{
+    border-color: black;
+}
+
+.menu-desktop-sair a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ff3860;
+    color: #fff;
+    margin-left: 20px;
+}
+
+nav.menu-mobile ul li a.selected{
+    color: #f95738;
+}
+
+nav.menu-desktop ul li a.selected{
+    color: #f95738;
+}
+
+nav.menu-mobile{
+    display: none;
+    margin: 10px 0;
+    float: right;
+}
+
+nav.menu-mobile h2{
+    cursor: pointer;
+}
+
+nav.menu-mobile li{
+    padding: 8px 0;
+}
+
+nav.menu-mobile ul li:hover{
+    border-bottom: 1px solid deepskyblue;
+}
+
+nav.menu-mobile a{
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+
+.menu-mobile input{
+    border: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.menu-desktop-sair a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ff3860;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.menu-mobile ul li a.sair{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ff3860;
+    color: #fff;
+    display: inline-block;
+}
+
+nav.menu-mobile ul{
+    display: none;
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 54px;
+    z-index: 999;
+}
+
+
+/*Section principal*/
+
+section{
+    padding: 40px 10px;
+}
+
+.perfil{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.perfil img{
+    padding: 10px 10px 0 10px;
+    width: 100%;
+}
+
+.perfil h2{
+    font-size: 18px;
+    padding: 0 30px;
+}
+
+.perfil table{
+    font-size: 12px;
+    padding: 5px 0 15px 0;
+}
+
+.perfil tr th{
+    font-weight: lighter;
+    padding: 0px 29px;
+    text-align: left;
+}
+
+.perfil tr td{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0px 29px;
+}
+
+/*melhores-da-semana*/
+
+.melhores-da-semana{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.melhores-da-semana p{
+    padding: 10px;
+}
+
+.melhores-da-semana a{
+    text-decoration: none;
+    color: #f95738;
+}
+
+/*tags*/
+
+.tags{
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.tags a{
+    font-weight: lighter;
+    font-size: 12px;
+    display: inline-block;
+    text-decoration: none;
+    color: #f95738;
+    padding: 7px 10px;
+    background-color: #f5f5f5;
+    margin: 4px 1px;
+    border-radius: 5px;
+}
+
+/*Estatísticas*/
+
+.estatisticas{
+    background: #fff;
+    border-radius: 5px;
+    padding: 15px 15px 30px 15px;
+}
+
+.estatisticas h2{
+    font-weight: normal;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1050px){
+    nav.menu-desktop{
+        display: none;
+    }
+    nav.menu-mobile{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .w50{
+        width: 100%;
+    }
+    
+    .perfil h2{
+        padding: 0 42px;
+    }
+    
+    .perfil tr th{
+        padding: 0px 40px;
+    }
+
+    .perfil tr td{
+        padding: 0px 40px;
+    }
+    
+    .perfil{
+        margin-bottom: 20px;
+    }
+    
+    .estatisticas{
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .melhores-da-semana{
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .tags{
+        margin: 10px 0;
+    }
+    
+    .w25{
+        width: 100%;
+    }
+}
+

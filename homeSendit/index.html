@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <!--Site original desenvolvido por Dann Luciano
+    github.com/dannluciano-->
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Walex" />
+        <meta name="description" content="Home" />
+        <meta name="keywords" content="Home" />
+        <!--Font awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <!--css-->
+        <link href="css/style.css" type="text/css" rel="stylesheet" />
+        <!--responsivo-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0"/>
+        <title>SendIT</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png"/>
+                    </a>
+                </div><!--logo-->
+                <nav class="menu-desktop">
+                    <ul>
+                        <li><a href="" class="selected"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href=""><i class="fas fa-bolt"></i> Questões Concluídas</a></li>
+                        <li><a href=""><i class="fas fa-home"></i> Questão Aleatória</a></li>
+                        <li><a href=""><i class="fas fa-random"></i> Quadro de Pontos</a></li>
+                        <li><a href=""><i class="fas fa-rocket"></i> Envios</a></li>
+                    </ul>
+                    
+                    <div class="menu-desktop-sair">
+                        <input type="submit" value="Dark/Light">
+                        <a href="#">Sair</a>
+                    </div><!--menu-desktop-sair-->
+                </nav><!--menu-desktop-->
+                <nav class="menu-mobile">
+                    <h2><i class="fas fa-bars"></i></h2>
+                    <ul>
+                        <li><a href="" class="selected"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href=""><i class="fas fa-bolt"></i> Questões Concluídas</a></li>
+                        <li><a href=""><i class="fas fa-home"></i> Questão Aleatória</a></li>
+                        <li><a href=""><i class="fas fa-random"></i> Quadro de Pontos</a></li>
+                        <li><a href=""><i class="fas fa-rocket"></i> Envios</a></li>
+                        <li><input type="submit" value="Dark/Light"></li>
+                        <li><a href="#" class="sair">Sair</a></li>
+                    </ul>
+                </nav><!--menu-mobile-->
+                <div class="clear"></div><!--clear-->
+            </div><!--container-->
+        </header>
+        
+        <section>
+            <div class="container">
+                <div class="w25">
+                    <div class="perfil">
+                        <img src="images/level_73.png" alt="Level 73 imagem"/>
+                        <h2>WALEX</h2>
+                        <table>
+                            <tr>
+                                <th><small>LEVEL</small></th>
+                                <th><small>XP</small></th>
+                            </tr>
+                            <tr>
+                                <td>99</td>
+                                <td>9999</td>
+                            </tr>
+                        </table>
+                    </div><!--perfil-->
+                    
+                    <div class="melhores-da-semana">
+                        <h2>Melhores da Semana</h2>
+                        <p><a href="#">Walex</a> - 9999 XPs</p>
+                        <p><a href="#">Walex</a> - 9999 XPs</p>
+                        <p><a href="#">Walex</a> - 9999 XPs</p>
+                    </div><!--melhores-da-semana-->
+                </div><!--w25-->
+                
+                <div class="w50">
+                    <div class="tags">
+                        <a href="#">Todas</a> <a href="#">Entrada e Saída</a> <a href="#">Estruturas de Controle</a> <a href="#">Estruturas de Repetição</a> <a href="#">Funções</a> <a href="#">Introdução</a> <a href="#">Matemática</a> <a href="#">Física</a> <a href="#">Strings</a> <a href="#">Geometria Computacional</a> <a href="#">Paradigmas</a> <a href="#">Coleções</a> <a href="#">Avaliação</a> <a href="#">Maratona</a> <a href="#">Vetores</a>
+                    </div><!--tags-->    
+                </div><!--w50-->
+                
+                <div class="w25">
+                    <div class="estatisticas">
+                        <h2>Estatísticas</h2>
+                    </div><!--estatisticas-->
+                </div><!--w25-->
+                <div class="clear"></div><!--clear-->
+            </div><!--container-->
+        </section>
+        
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <!--menu-mobile-jquery-->
+        <script>
+            $('nav.menu-mobile h2').click(function(){
+                $('nav.menu-mobile ul').slideToggle();
+        });
+        </script>
+    </body>
+</html>
