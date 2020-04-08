@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Classes auxiliares*/
+
+.container{
+    margin: 0 auto;
+    padding: 0 2%;
+    max-width: 1280px;
+}
+
+.clear{
+    clear: both;
+}
+
+.w50{
+    width: 50%;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+.center{
+    margin: 0 auto;
+}
+.w25{
+    width: 25%;
+}
+
+.w33{
+    width: 33.3%;
+}
+
+.w33-cursos{
+    width: 33.3%;
+}
+
+
+/*Classes do site*/
+
+header.header-mobile{
+    text-align: center;
+    display: none;
+    padding: 30px 0;
+    background-color: #4c3282;
+}
+
+header{
+    background: #5e3ea1;
+}
+
+.logo{
+    padding: 28px 0;
+}
+
+.logo h2 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav.menu-desktop{
+    position: relative;
+    top: 32px;
+}
+
+nav.menu-desktop ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav.menu-desktop ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav.menu-desktop ul li a:hover{
+    color: darkorchid;
+}
+
+.entrar{
+    display: inline-block;
+    border: 0;
+    width: 80px;
+    height: 25px;
+    border-radius: 15px;
+    color: #5e3ea1;
+    background: #fff;
+    cursor: pointer;
+}
+
+.matricular{
+    display: inline-block;
+    background: none;
+    color: #fff;
+    height: 25px;
+    width: 180px;
+    border-radius: 15px;
+    border: 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+nav.menu-mobile{
+    display: none;
+    margin: 30px 0;
+    float: right;
+}
+
+nav.menu-mobile h2{
+    cursor: pointer;
+    color: #fff;
+}
+
+nav.menu-mobile li{
+    padding: 8px 0;
+}
+
+nav.menu-mobile a{
+    display: block;
+    text-decoration: none;
+    color: #5e3ea1;
+}
+
+nav.menu-mobile ul{
+    display: none;
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 170px;
+    z-index: 999;
+}
+
+/*Section banner*/
+
+section.banner{
+    padding: 100px;
+    background-image: url(../images/banner-home.png);
+    text-align: center;
+    background-size: cover;
+    
+    color: #fff;
+}
+
+.conteudo-banner p{
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.conteudo-banner h1{
+    font-size: 100px;
+    margin: 5px 0;
+    font-weight: normal;
+}
+
+.conteudo-banner input{
+    display: inline-block;
+    border: 0;
+    background: none;
+    color: #e7426b;
+    border: 1px solid #e7426b;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+/*diferenciais*/
+section.diferencas{
+    padding: 100px 130px;
+}
+.diferenciais{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80px 0;
+}
+
+.single-diferencial{
+    text-align: center;
+    color: #5e3ea1;
+}
+
+.single-diferencial p{
+    margin: 5px 0;
+}
+
+
+.single-diferencial img{
+    display: inline-block;
+    width: 50%;
+    background-color: #dcd4e5;
+    height: 120px;
+    border-radius: 50%;
+}
+
+/*Melhores cursos*/
+section.melhores{
+    background-color: #4c3282;
+    padding: 50px 2px;
+    text-align: center;
+    color: #fff;
+}
+section.melhores h2{
+    margin: 5px 0;
+}
+
+section.melhores p{
+    font-weight: lighter;
+}
+
+/*Cursos*/
+
+section.cursos{
+    padding: 40px 15px;
+}
+
+.cursos-all{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.single-curso{
+    text-align: center;
+    padding: 0 30px;
+}
+.single-curso h3{
+    padding: 5px 15px;
+    font-weight: normal;
+    font-size: 20px;
+}
+.single-curso p{
+    padding: 40px 15px;
+}
+
+.single-curso-info{
+    border: 1px solid #ccc;
+}
+
+.single-curso img{
+    width: 100%;
+}
+
+.single-curso a{
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    padding: 10px 0;
+    background-color: #5fb382;
+    text-decoration: none;
+}
+
+/*Sessão Comentarios*/
+
+section.comentarios{
+    background-color: #a996c7;
+    padding: 60px 20px;
+}
+
+.single-comentario{
+    padding: 5px 10px;
+}
+
+.single-box{
+    display: inline-block;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+.single-box p{
+    font-weight: lighter;
+    padding: 20px 10px;
+}
+
+/*Sessão footer*/
+footer.footer1{
+    background-color: #4c3282;
+    padding: 20px 40px;
+    color: #fff;
+}
+
+.informacoes{
+    padding: 60px 50px;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.informacoes h2{
+    text-align: center;
+}
+
+.informacoes p{
+    margin: 10px 0;
+}
+.informacoes span{
+    font-weight: bold;
+}
+.informacoes i{
+    margin: 5px 10px;
+    color: #fff;
+}
+
+.contato{
+    text-align: center;
+}
+
+/*Sessão footer2*/
+
+footer.footer2{
+    background-color: #3e2a68;
+    text-align: center;
+}
+
+footer.footer2 img{
+    height: 15px;
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 1170px){
+    header.header-mobile{
+        display: block;
+    }
+    
+    nav.menu-mobile{
+        display: block;
+    }
+    
+    nav.menu-mobile ul{
+        display: none;
+    }
+    nav.menu-desktop{
+        display: none;
+    }
+    header.header-mobile .entrar{
+        margin: 5px;
+    }
+
+    header.header-mobile .matricular{
+        margin: 5px;
+    }
+
+}
+
+@media screen and (max-width: 968px){
+    .w33{
+        width: 100%;
+    }
+    
+    .w33-cursos{
+        width: 50%;
+        margin-top: 20px;
+    }
+    
+    .w25{
+        margin-top: 25px;
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 550px){
+    .w25{
+        width: 100%;
+    }
+    
+    .w33-cursos{
+        width: 100%;
+    }
+    
+    .w50{
+        width: 100%;
+    }
+    
+    .informacoes{
+        text-align: center;
+        padding: 5px 0;
+    }
+    
+    section.banner{
+        padding: 50px;
+    }
+    
+    .single-comentario{
+        padding: 15px 0;
+    }
+
+    .single-box{
+        padding: 5px;   
+    }
+    
+    section.diferencas{
+        padding: 100px 10px;
+    }
+}
+
+@media screen and (max-width: 310px){
+    
+    header.header-mobile .matricular{
+        margin-top: 10px;
+    }
+    
+    section.melhores{
+        background-color: #4c3282;
+        padding: 50px 2px;
+        text-align: center;
+        color: #fff;
+    }
+    section.melhores h2{
+        margin: 5px 0;
+        font-size: 18px;
+    }
+
+    section.melhores p{
+        font-size: 14px;
+    }
+    
+    section.banner{
+        text-align: center;
+    }
+
+    .conteudo-banner p{
+        font-size: 30px;
+        margin: 20px 0;
+    }
+
+    .conteudo-banner h1{
+        font-size: 50px;
+        margin: 5px 0;
+        font-weight: normal;
+    }
+
+    .conteudo-banner input{
+        display: block;
+        border-radius: 30px;
+        font-size: 12px;
+        padding: 15px 20px;
+        cursor: pointer;
+    }
+    
+    
+}
